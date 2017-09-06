@@ -46,28 +46,28 @@
     "retryPrompt": "Please select correct option"
   },{
 	"id": 6,
-	"botMessage": "Students",
+	"botMessage": "Please write the query below for Students",
 	"botMessageType": "autocomplete",
 	"userMessageType": "autocomplete",
 	"nextResponse": 10,
 	"retryPrompt" : "Please select correct option"
 },{
 	"id": 7,
-	"botMessage": "Teachers",
+	"botMessage": "Please write the query below for Teachers",
 	"botMessageType": "autocomplete",
 	"userMessageType": "autocomplete",
 	"nextResponse": 10,
 	"retryPrompt" : "Please select correct option"
 },{
 	"id": 8,
-	"botMessage": "Olympiad",
+	"botMessage": "Please write the query below Olympiad",
 	"botMessageType": "autocomplete",
 	"userMessageType": "autocomplete",
 	"nextResponse": 10,
 	"retryPrompt" : "Please select correct option"
 },{
 	"id": 9,
-	"botMessage": "About Techupindia",
+	"botMessage": "Please write the query below About Techupindia",
 	"botMessageType": "autocomplete",
 	"userMessageType": "autocomplete",
 	"nextResponse": 10,
