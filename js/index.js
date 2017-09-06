@@ -368,7 +368,8 @@ function determineNextResponses (botMessage) {
             results: function () {}
           }
         })
-      } else if (message_content.match(/Teachers/g)) {
+      } 
+      if (message_content.match(/Teachers/g)) {
         jQ('#userInputText').autocomplete({
           source: function (request, response) {
             var results = jQ.ui.autocomplete.filter(Object.keys(faq2), request.term)
@@ -418,7 +419,8 @@ function determineNextResponses (botMessage) {
             results: function () {}
           }
         })
-      }else if (message_content.match(/About Techupindia/g)) {
+      }
+      if (message_content.match(/About Techupindia/g)) {
         jQ('#userInputText').autocomplete({
           source: function (request, response) {
             var results = jQ.ui.autocomplete.filter(Object.keys(faq4), request.term)
