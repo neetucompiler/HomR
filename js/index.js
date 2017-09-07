@@ -473,14 +473,6 @@ function choiceClick (selectedChoice) {
   insertBotMessage(nextResponses[selectedChoice])
 }
 
-/*// ###
-function isValidEmail (email) {
-  var re = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+(?:[A-Z]{2}|com|org|net|gov|mil|biz|info|mobi|name|aero|jobs|museum)\b/
-  return re.test(email)
-}
-*/
-
-
 function isValidString (str) {
   if (str !== undefined && str !== null && str !== '' && jQ.trim(str) !== '') {
     return !/[~`!#$%\^&*+=\-\[\]\\';,/{}|\\":<>\?]/g.test(str)
@@ -489,14 +481,6 @@ function isValidString (str) {
   }
 }
 
-function isValidID (str){
-  var re = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/
-  if (re.test(str) == false) 
-          {
-              return false;
-          }
-  return true;
-}
 
 function isValidNumber (str) {
   return !isNaN(str)
@@ -528,18 +512,6 @@ function validate () {
       } else {
         console.log('inside number else')
         displayBotMessage('please enter valid number')
-      }
-      break
-    case 'mail':
-      if (isValidID(userInputText)) {
-        console.log('valid ID')
-        insertUserMessage(userInputText)
-        insertBotMessage(nextResponses[0])
-
-        retryPrompt = ''
-      } else {
-        console.log('inside mail else')
-        displayBotMessage('please enter valid email ID')
       }
       break
 
