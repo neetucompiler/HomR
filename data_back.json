@@ -1,6 +1,6 @@
 [{
 	"id": 1,
-	"botMessage": "Hi.. Welcome to Techupindia Bot",
+	"botMessage": "Hi.. Welcome to Teachupindia Bot",
 	"botMessageType": "dialog",
 	"nextResponse": 2,
 	"retryPrompt" : "Please select correct option"
@@ -18,7 +18,7 @@
       "option": "Olympiad",
       "nextResponse": 5
     },{
-      "option": "About Techupindia",
+      "option": "About Teachupindia",
       "nextResponse": 6
     }],
     "userMessageType": "text",

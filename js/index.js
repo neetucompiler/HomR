@@ -420,7 +420,7 @@ function determineNextResponses (botMessage) {
           }
         })
       }
-      if (message_content.match(/About Techupindia/g)) {
+      if (message_content.match(/About Teachupindia/g)) {
         jQ('#userInputText').autocomplete({
           source: function (request, response) {
             var results = jQ.ui.autocomplete.filter(Object.keys(faq4), request.term)
