@@ -85,7 +85,7 @@ Chat Title
   color: #fff;
   text-transform: uppercase;
   text-align: left;
-  padding: 10px 10px 10px 50px;
+  padding: 10px 10px 10px 0px;
 }
 
 .chat-title h1,
