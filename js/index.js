@@ -343,7 +343,7 @@ function determineNextResponses (botMessage) {
       message_content = botMessage.botMessage
       userIptVar = botMessage.userInputVar
       console.log("inside autocomplete-------------------------------------------")
-      if (message_content.match(/Students/g)) {
+      if (message_content.match(/Parents/g)) {
         jQ('#userInputText').autocomplete({
           source: function (request, response) {
             var results = jQ.ui.autocomplete.filter(Object.keys(faq1), request.term)
@@ -412,32 +412,6 @@ function determineNextResponses (botMessage) {
           select: function (event, ui) {
             if (ui.item.value in faq3) {
               correct_answer = faq3[ui.item.value]
-            }
-          },
-          messages: {
-            noResults: '',
-            results: function () {}
-          }
-        })
-      }
-      if (message_content.match(/About Teachupindia/g)) {
-        jQ('#userInputText').autocomplete({
-          source: function (request, response) {
-            var results = jQ.ui.autocomplete.filter(Object.keys(faq4), request.term)
-            response(results.slice(0, 10))
-          },
-          maxResults: 10,
-          multiple: true,
-          mustMatch: true,
-          position: {
-            my: 'left bottom-15',
-            at: 'left bottom-15',
-            of: '#userInputText',
-            collision: 'flip'
-          },
-          select: function (event, ui) {
-            if (ui.item.value in faq4) {
-              correct_answer = faq4[ui.item.value]
             }
           },
           messages: {

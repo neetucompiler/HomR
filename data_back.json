@@ -9,7 +9,7 @@
     "botMessage": "Please select from below?",
     "botMessageType": "choice",
     "choice": [{
-      "option": "Students",
+      "option": "Parents",
       "nextResponse": 3
     }, {
       "option": "Teachers",
@@ -17,42 +17,32 @@
     },{
       "option": "Olympiad",
       "nextResponse": 5
-    },{
-      "option": "About Teachupindia",
-      "nextResponse": 6
     }],
     "userMessageType": "text",
     "retryPrompt": "Please select correct option"
   },{
 	"id": 3,
-	"botMessage": "Please write the query below for Students",
+	"botMessage": "Please write the query below for Parents",
 	"botMessageType": "autocomplete",
 	"userMessageType": "autocomplete",
-	"nextResponse": 7,
+	"nextResponse": 6,
 	"retryPrompt" : "Please select correct option"
 },{
 	"id": 4,
 	"botMessage": "Please write the query below for Teachers",
 	"botMessageType": "autocomplete",
 	"userMessageType": "autocomplete",
-	"nextResponse": 7,
+	"nextResponse": 6,
 	"retryPrompt" : "Please select correct option"
 },{
 	"id": 5,
 	"botMessage": "Please write the query below Olympiad",
 	"botMessageType": "autocomplete",
 	"userMessageType": "autocomplete",
-	"nextResponse": 7,
-	"retryPrompt" : "Please select correct option"
-},{
-	"id": 6,
-	"botMessage": "Please write the query below About Techupindia",
-	"botMessageType": "autocomplete",
-	"userMessageType": "autocomplete",
-	"nextResponse": 7,
+	"nextResponse": 6,
 	"retryPrompt" : "Please select correct option"
 },{  
-    "id": 7,
+    "id": 6,
     "botMessage": "What you want to do next?",
     "botMessageType": "choice",
     "choice": [{
@@ -60,12 +50,12 @@
       "nextResponse": 2
     }, {
       "option": "Want to exit",
-      "nextResponse": 8
+      "nextResponse": 7
     }],
     "userMessageType": "text",
     "retryPrompt": "Please select correct option"
   },{
-	"id":8,
+	"id":7,
 	"botMessage": "Thanks .It was nyc to talk to you thanks",
 	"botMessageType": "dialog"
 }]
