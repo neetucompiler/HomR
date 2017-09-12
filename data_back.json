@@ -9,7 +9,7 @@
     "botMessage": "Please select from below?",
     "botMessageType": "choice",
     "choice": [{
-      "option": "Parents",
+      "option": "Students/Parents",
       "nextResponse": 3
     }, {
       "option": "Teachers",
@@ -22,7 +22,7 @@
     "retryPrompt": "Please select correct option"
   },{
 	"id": 3,
-	"botMessage": "Please write the query below for Parents",
+	"botMessage": "Please write the query below for Students or Parents",
 	"botMessageType": "autocomplete",
 	"userMessageType": "autocomplete",
 	"nextResponse": 6,
