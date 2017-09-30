@@ -1,6 +1,6 @@
 [{
 	"id": 1,
-	"botMessage": "Hi.. Welcome to Teachupindia Bot",
+	"botMessage": "Hi.. Welcome to HomeR Bot",
 	"botMessageType": "dialog",
 	"nextResponse": 2,
 	"retryPrompt" : "Please select correct option"
@@ -9,40 +9,112 @@
     "botMessage": "Please select from below?",
     "botMessageType": "choice",
     "choice": [{
-      "option": "Students/Parents",
+      "option": "Home Ideas",
       "nextResponse": 3
     }, {
-      "option": "Teachers",
-      "nextResponse": 4
+      "option": "Share Home Ideas",
+      "nextResponse": 3
     },{
-      "option": "Olympiad",
+      "option": "Know about HomeR",
+      "nextResponse": 4
+    }],
+    "userMessageType": "text",
+    "retryPrompt": "Please select correct option"
+  },{  
+    "id": 3,
+    "botMessage": "Have you installed the Free app?",
+    "botMessageType": "choice",
+    "choice": [{
+      "option": "yes",
       "nextResponse": 5
+    }, {
+      "option": "no",
+      "nextResponse": 6
+    }],
+    "userMessageType": "text",
+    "retryPrompt": "Please select correct option"
+  },{  
+    "id": 5,
+    "botMessage": "Are you having issues with the app?",
+    "botMessageType": "choice",
+    "choice": [{
+      "option": "yes",
+      "nextResponse": 7
+    }, {
+      "option": "no",
+      "nextResponse": 8
     }],
     "userMessageType": "text",
     "retryPrompt": "Please select correct option"
   },{
-	"id": 3,
-	"botMessage": "Please write the query below for Students or Parents",
-	"botMessageType": "autocomplete",
-	"userMessageType": "autocomplete",
-	"nextResponse": 6,
-	"retryPrompt" : "Please select correct option"
+  "id": 7,
+  "botMessage": "No problem, <a href=\"info@homr.mobi\">Click here</a> to drop us a message about your issue (capture email as well for response with subject indicating Existing app issue)",
+  "botMessageType": "dialog",
+  "nextResponse": 12,
+  "retryPrompt" : "Please select correct option"
 },{
-	"id": 4,
-	"botMessage": "Please write the query below for Teachers",
-	"botMessageType": "autocomplete",
-	"userMessageType": "autocomplete",
-	"nextResponse": 6,
-	"retryPrompt" : "Please select correct option"
+  "id": 8,
+  "botMessage": "Great to hear, how else can we help you today - <a href=\"info@homr.mobi\">Click here</a>  to drop us a message (capture email and subject Existing app non-issue)",
+  "botMessageType": "dialog",
+  "nextResponse": 12,
+  "retryPrompt" : "Please select correct option"
 },{
-	"id": 5,
-	"botMessage": "Please write the query below Olympiad",
-	"botMessageType": "autocomplete",
-	"userMessageType": "autocomplete",
-	"nextResponse": 6,
-	"retryPrompt" : "Please select correct option"
+  "id": 6,
+  "botMessage": "Do you have an android Phone /iphone",
+  "botMessageType": "dialog",
+  "nextResponse": 9,
+  "retryPrompt" : "Please select correct option"
 },{  
-    "id": 6,
+    "id": 9,
+    "botMessage": "Select from below",
+    "botMessageType": "choice",
+    "choice": [{
+      "option": "Android",
+      "nextResponse": 10
+    }, {
+      "option": "iphone",
+      "nextResponse": 11
+    }],
+    "userMessageType": "text",
+    "retryPrompt": "Please select correct option"
+  },{
+  "id": 10,
+  "botMessage": "Great <a href=\"https://play.google.com/store/apps/details?id=com.homrapp\">Click here</a>",
+  "botMessageType": "dialog",
+  "nextResponse": 12,
+  "retryPrompt" : "Please select correct option"
+},{
+  "id": 11,
+  "botMessage": "Great <a href=\"https://itunes.apple.com/us/app/homr-the-free-home-design-rating-app/id1191100621?ls=1&mt=8\">Click here</a>",
+  "botMessageType": "dialog",
+  "nextResponse": 12,
+  "retryPrompt" : "Please select correct option"
+},{
+  "id": 4,
+  "botMessage": "Fantastic there's three ways to do this",
+  "botMessageType": "dialog",
+  "nextResponse": 13,
+  "retryPrompt" : "Please select correct option"
+},{
+  "id": 13,
+  "botMessage": "Watch our YouTube vid (pop up new Window) <a href=\"https://www.youtube.com/watch?v=5c0PfeXymiI\">https://www.youtube.com/watch?v=5c0PfeXymiI</a>",
+  "botMessageType": "dialog",
+  "nextResponse": 14,
+  "retryPrompt" : "Please select correct option"
+},{
+  "id": 14,
+  "botMessage": "<a href=\"info@homr.mobi\">Click here</a> And Drop us a note (capture email as well for response with subject indicating Existing app issue)",
+  "botMessageType": "dialog",
+  "nextResponse": 15,
+  "retryPrompt" : "Please select correct option"
+},{
+  "id": 15,
+  "botMessage": "Read some of our reviews </br> <a href=\"https://seeninthecity.co.uk/2017/07/10/homr-new-way-rate-home/\">A</a> </br> <a href=\" https://storage.googleapis.com/wzukusers/user-28811704/images/5966071930747Unvsj4K/HomR-article.png\">B</a>",
+  "botMessageType": "dialog",
+  "nextResponse": 12,
+  "retryPrompt" : "Please select correct option"
+},{  
+    "id": 12,
     "botMessage": "What you want to do next?",
     "botMessageType": "choice",
     "choice": [{
@@ -50,12 +122,12 @@
       "nextResponse": 2
     }, {
       "option": "Want to exit",
-      "nextResponse": 7
+      "nextResponse": 16
     }],
     "userMessageType": "text",
     "retryPrompt": "Please select correct option"
   },{
-	"id":7,
+	"id":16,
 	"botMessage": "Thanks .It was nyc to talk to you thanks",
 	"botMessageType": "dialog"
 }]

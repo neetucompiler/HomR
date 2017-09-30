@@ -254,7 +254,7 @@ function insertBotMessage (id) {
         displayBotMessage(getRandom(botDialogs[id].botMessage), undefined, choices)
         determineNextResponses(botDialogs[id])
         disableUserInput('Please select your Choice above')
-        break
+        break0
 
       case 'dialog':
         displayBotMessage(botDialogs[id].botMessage)
