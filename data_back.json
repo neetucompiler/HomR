@@ -72,7 +72,7 @@
       "option": "Android",
       "nextResponse": 10
     }, {
-      "option": "iphone",
+      "option": "iPhone",
       "nextResponse": 11
     }],
     "userMessageType": "text",
