@@ -81,13 +81,17 @@ Chat Title
   flex: 0 1 45px;
   position: relative;
   z-index: 2;
-  background: rgba(170, 6, 20, 1);
+  background-color: #678353 !important;
   color: #fff;
   text-transform: uppercase;
   text-align: left;
   padding: 10px 10px 10px 0px;
 }
 
+.chat-title > div, .chat-title img{
+  margin: 0px 5px 0px 8px !important; 
+  border-radius: 4px;
+}
 .chat-title h1,
 .chat-title h2 {
   font-weight: normal;
@@ -150,10 +154,11 @@ Messages
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
-  color: rgb(123, 4, 14);
+  color: #cccccc;
   overflow: hidden;
   position: relative;
   width: 100%;
+  background-color: #B6B4A7;
 }
 
 .messages .messages-content {
@@ -169,7 +174,7 @@ Messages
   float: left;
   padding: 6px 10px 7px;
   border-radius: 10px 10px 10px 0;
-  background: rgba(249, 185, 32, 1);
+  background: #cccccc !important;
   margin: 8px 0 16px 0;
   font-size: 11px;
   line-height: 1.4;
@@ -184,7 +189,7 @@ Messages
   margin: 3% 1%;
   width: 98%;
   border-radius: 10px;
-  background: rgba(249, 185, 32, 1);
+  background: #cccccc;
   font-size: 11px;
   line-height: 1.4;
   position: relative;
@@ -200,6 +205,10 @@ Messages
   text-align: left;
 }
 
+
+.timestamp {
+  color: #333 !important;
+}
 /*.messages .chatBtnHolder .timestamp{
   position: absolute;
   bottom: -10px;
@@ -215,7 +224,7 @@ Messages
   content: '';
   position: absolute;
   bottom: -6px;
-  border-top: 6px solid rgba(249, 185, 32, 1);
+  border-top: 6px solid #cccccc;
   left: 0;
   border-right: 7px solid transparent;
 }
@@ -253,7 +262,7 @@ Messages
   right: 0;
   border-right: none;
   border-left: 5px solid transparent;
-  border-top: 4px solid rgba(170, 6, 20, 1);
+  border-top: 4px solid #ddd;
   bottom: -4px;
 }
 
@@ -409,6 +418,9 @@ Message Box
 Custom Srollbar
 --------------------*/
 
+#mCSB_1 {
+  background-color: #f4f7f2;
+}
 .mCSB_scrollTools {
   margin: 1px -3px 1px 0;
   opacity: 0;
@@ -618,7 +630,7 @@ Bounce Animations
   position: fixed;
   bottom: 50px;
   right: 30px;
-  color: rgb(123, 4, 14);
+  color: rgba(255,255,255,.9);
   font-size: 12px;
   width: 200px;
   -webkit-box-shadow: 0 8px 6px -6px black;
@@ -627,7 +639,7 @@ Bounce Animations
   text-align: center;
   border-radius: 30px;
   padding: 10px;
-  background-color: rgb(249, 185, 32);
+  background-color: rgba(26, 95, 167, 0.8);
 }
 
 #animHelpText::before {
@@ -646,28 +658,28 @@ Bounce Animations
   border-radius: 5px;
   padding: 5px 10px;
   margin: 1%;
-  color: rgb(249, 185, 32);
-  background-color: rgb(123, 4, 14);
+  color: #111111;
+  background-color: #678353;
   width: 48%;
   word-wrap: break-word;
 }
 
 .chatBtn:hover {
-  background-color: rgb(170, 6, 20);
+  background-color: #86ca55;
 }
 
 .chatBtn:active {
-  background-color: rgb(246, 9, 29);
+  background-color:  #86ca55;
 }
 
 .chatBtn:disabled {
   border-radius: 5px;
   padding: 3px 8px;
   border: 2px solid ButtonFace;
-  color: GrayText;
+  color: #333;
   cursor: not-allowed;
-  background-color: #ddd;
-  background: #ddd;
+  background-color: #678353;
+  background: #678353;
 }
 
 md-autocomplete input:not(.md-input) {

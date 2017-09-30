@@ -1,6 +1,6 @@
 var msgsContainer = jQ('.messages-content')
 var index = 0
-var userInputField, car_make, car_model
+var userInputField
 
 // ################## Get the browser
 function get_browser () {
@@ -92,7 +92,7 @@ function insertUserMessage (msg) {
     console.log('No element found with .mCSB_container')
     return false
   }
-  jQ('<div class="message new message-personal">' + msg + '</div>').appendTo(correctElement)
+  jQ('<div class="message new message-personal" style="color: #333">' + msg + '</div>').appendTo(correctElement)
   setTimeStamp()
   jQ('.message-input').val('')
   jQ('.message.loading').remove()
@@ -114,7 +114,7 @@ function displayBotMessage (botMessage, timeout, choices) {
       setTyping()
     }, timeout / 2)
     setTimeout(function () {
-      jQ('<div class="message new"><figure class="avatar"><img src="icon.png" /></figure>' + botMessage + '</div>').appendTo(correctElement)
+      jQ('<div class="message new style="color:#333"><figure class="avatar"><img src="icon.png" /></figure>' + botMessage + '</div>').appendTo(correctElement)
       setTimeStamp()
       jQ('.message.loading').remove()
       jQ('.message.timestamp').remove()
@@ -122,14 +122,14 @@ function displayBotMessage (botMessage, timeout, choices) {
       playSound('bing')
     }, timeout)
   } else {
-    jQ('<div class="message new"><figure class="avatar"><img src="icon.png" /></figure>' + botMessage + '</div>').appendTo(correctElement)
+    jQ('<div class="message new" style="color:#333"><figure class="avatar"><img src="icon.png" /></figure>' + botMessage + '</div>').appendTo(correctElement)
     setTimeStamp()
     playSound('bing')
   }
 
   // if the choices exists and has atleast 2 choices
   if (choices !== undefined && choices.length > 1) {
-    var choicesBotMessage = '<div class="chatBtnHolder new">'
+    var choicesBotMessage = '<div class="chatBtnHolder new" style="color:#cccccc">'
     for (var i = 0; i < choices.length; i++) {
       // choicesBotMessage += '<button class="chatBtn" onclick="choiceClick(\'' + choices[i].replace(/'/g, "\\'") + '\')" value="' + choices[i] + '">' + choices[i] + '</button>';
       choicesBotMessage += '<button class="chatBtn" onclick="choiceClick(\'' + i + '\')" value="' + choices[i] + '">' + choices[i] + '</button>'
@@ -262,7 +262,7 @@ function insertBotMessage (id) {
         insertBotMessage(nextResponses[0])
         break
 
-      case 'autocomplete':
+      case 'flight':
         enableUserInput('Please type!')
         displayBotMessage(botDialogs[id].botMessage)
         determineNextResponses(botDialogs[id])
