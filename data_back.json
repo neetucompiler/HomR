@@ -128,6 +128,6 @@
     "retryPrompt": "Please select correct option"
   },{
 	"id":16,
-	"botMessage": "Thanks, it was nice to talk to you ☺",
+	"botMessage": "Thanks, it was nice to talk to you :)",
 	"botMessageType": "dialog"
 }]
